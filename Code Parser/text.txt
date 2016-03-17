@@ -1,0 +1,16 @@
+
+for(int i=0;i<10;i++)
+{
+std::cout<<"hello";
+}
+
+bool Parser::parse()
+{
+  bool succeeded = false;
+  for(size_t i=0; i<rules.size(); ++i)
+  {
+    if(rules[i]->doTest(pTokColl))
+      succeeded = true;
+  }
+  return succeeded;
+}

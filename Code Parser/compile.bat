@@ -1,0 +1,1 @@
+devenv Project2HelperCode.sln /rebuild debug

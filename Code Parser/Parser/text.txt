@@ -1,0 +1,13 @@
+class DispClass : public IAction
+{
+	Repository* p_Repo;
+public:
+	DispClass(Repository* pRepo)
+	{
+		p_Repo = pRepo;
+	}
+	void doAction(ITokCollection*& pTc)
+	{
+		std::cout << "\n Class/ Struct name: " << pTc->show().c_str();
+	}
+};

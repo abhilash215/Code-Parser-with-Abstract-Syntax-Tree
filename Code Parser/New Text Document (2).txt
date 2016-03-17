@@ -1,0 +1,2 @@
+cd Debug
+MetricsExecutive.exe 
